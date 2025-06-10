@@ -1,0 +1,83 @@
+<!DOCTYPE html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer">
+            <h1>⏰ Pomodoro Timer</h1>
+            <div class="dropdown-header" onclick="toggleDropdown()">
+                <h3>Choose a background</h3>
+                <span id="arrow" class="arrow">▼</span>
+            </div>
+            <!--Background Images-->
+            <div id="dropdownContent" class="dropdown-content img-background">
+                <img src="bg_images/1.jpeg" alt="Image 1">
+                <img src="bg_images/2.jpeg" alt="Image 2">
+                <img src="bg_images/3.jpeg" alt="Image 3">
+                <img src="bg_images/4.jpeg" alt="Image 4">
+                <img src="bg_images/5.jpeg" alt="Image 5">
+                <img src="bg_images/6.jpeg" alt="Image 6">
+                <img src="bg_images/7.jpeg" alt="Image 7">
+                <img src="bg_images/8.jpeg" alt="Image 8">
+                <img src="bg_images/9.jpeg" alt="Image 9">
+                <img src="bg_images/10.jpeg" alt="Image 10">
+                <img src="bg_images/11.jpeg" alt="Image 11">
+                <img src="bg_images/12.jpeg" alt="Image 12">
+                <img src="bg_images/13.jpeg" alt="Image 13">
+                <img src="bg_images/14.jpeg" alt="Image 14">
+                <img src="bg_images/15.jpeg" alt="Image 15">
+                <img src="bg_images/16.jpeg" alt="Image 16">
+                <img src="bg_images/17.jpeg" alt="Image 17">
+                <img src="bg_images/18.jpeg" alt="Image 18">
+                <img src="bg_images/19.jpeg" alt="Image 19">
+                <img src="bg_images/20.jpeg" alt="Image 20">
+            </div>
+            <!-- Pomodoro Timer Box -->
+            <div class="pomodoro-wrapper">
+                <div class="pomodoro-container">
+                    <div class="inputs">
+                        <label>
+                            Study time (minutes):
+                            <input type="number" id="studyInput" min="1" value="25" />
+                        </label>
+                        <label>
+                            Rest time (minutes):
+                        <input type="number" id="restInput" min="1" value="5" />
+                        </label>
+                    </div>
+                    <div class="timer-box" id="timerBox">
+                        <h2 id="timerDisplay">25:00</h2>
+                        <h3 id="sessionLabel">Study Time 📘</h3>
+                        <div class="buttons">
+                            <button id="startBtn">Start</button>
+                            <button id="pauseBtn" disabled>Pause</button>
+                            <button id="resetBtn">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="music-player">
+        <label for="musicSelect">Choose music:</label>
+        <select id="musicSelect">
+            <option value="music/piano_rain.mp3">Piano+Raindrops</option>
+            <option value="music/jazz_cafe.mp3">Slow Jazz</option>
+            <option value="music/pencil_sounds.mp3">Pencil Scribbingly</option>
+            <option value="music/ocean_waves.mp3">Ocean Waves</option>
+            <option value="music/rainforests.mp3">Rainy Forest</option>
+        </select>
+        <audio id="audioPlayer" controls loop>
+            <source src="music/1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+</div>
+
+    <script src="script.js"></script>
+</body>
