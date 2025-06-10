@@ -33,3 +33,5 @@ A simple and elegant Pomodoro timer web app with customizable study and rest int
 - `music/` — Folder containing soft music files (1.mp3 to 5.mp3)
 
 Happy focusing! 🌸
+
+<i>(download the images and music using the google drive link provided : https://bit.ly/3FQlvRM)</i>
